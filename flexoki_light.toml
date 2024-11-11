@@ -1,0 +1,145 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+
+# : Manager {{{
+
+[manager]
+cwd = { fg = "#6F6E69" }
+
+# Hovered
+hovered         = { fg = "#100F0F", bg = "#F2F0E5" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#AD8301", italic = true }
+find_position = { fg = "#A02F6F", bg = "reset", italic = true }
+
+# Marker
+marker_selected = { fg = "#66800B", bg = "#66800B" }
+marker_copied   = { fg = "#AD8301", bg = "#AD8301" }
+marker_cut      = { fg = "#AF3029", bg = "#AF3029" }
+
+# Tab
+tab_active   = { fg = "#6F6E69", bg = "#4385BE" }
+tab_inactive = { fg = "#4385BE", bg = "#DAD8CE" }
+tab_width    = 1
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#CECDC3" }
+
+# Highlighting
+syntect_theme = "~/.config/yazi/Catppuccin-macchiato.tmTheme"
+
+# : }}}
+
+
+# : Status {{{
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#CECDC3", bg = "#CECDC3" }
+
+# Mode
+mode_normal = { fg = "#100F0F", bg = "#4385BE", bold = true }
+mode_select = { fg = "#100F0F", bg = "#879A39", bold = true }
+mode_unset  = { fg = "#100F0F", bg = "#CE5D97", bold = true }
+
+# Progress
+progress_label  = { fg = "#100F0F", bold = true }
+progress_normal = { fg = "#4385BE", bg = "#100F0F" }
+progress_error  = { fg = "#AF3029", bg = "#100F0F" }
+
+# Permissions
+permissions_t = { fg = "#4385BE" }
+permissions_r = { fg = "#AD8301" }
+permissions_w = { fg = "#AF3029" }
+permissions_x = { fg = "#66800B" }
+permissions_s = { fg = "#575653" }
+
+# : }}}
+
+
+# : Input {{{
+
+[input]
+border   = { fg = "#6F6E69" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+# : }}}
+
+
+# : Select {{{
+
+[select]
+border   = { fg = "#6F6E69" }
+active   = { fg = "#A02F6F" }
+inactive = {}
+
+# : }}}
+
+
+# : Tasks {{{
+
+[tasks]
+border  = { fg = "#6F6E69" }
+title   = {}
+hovered = { underline = true }
+
+# : }}}
+
+
+# : Which {{{
+
+[which]
+mask            = { bg = "#F2F0E5" }
+cand            = { fg = "#24837B" }
+rest            = { fg = "#5E409D" }
+desc            = { fg = "#A02F6F" }
+separator       = "  "
+separator_style = { fg = "#575653" }
+
+# : }}}
+
+
+# : Help {{{
+
+[help]
+on      = { fg = "#A02F6F" }
+exec    = { fg = "#24837B" }
+desc    = { fg = "#575653" }
+hovered = { bg = "#CECDC3", bold = true }
+footer  = { fg = "#575653", bg = "#CECDC3"}
+
+# : }}}
+
+
+# : File-specific styles {{{
+
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "#5E409D" },
+
+	# Videos
+	{ mime = "video/*", fg = "#AD8301" },
+	{ mime = "audio/*", fg = "#AD8301" },
+
+	# Archives
+	{ mime = "application/zip",             fg = "#A02F6F" },
+	{ mime = "application/gzip",            fg = "#A02F6F" },
+	{ mime = "application/x-tar",           fg = "#A02F6F" },
+	{ mime = "application/x-bzip",          fg = "#A02F6F" },
+	{ mime = "application/x-bzip2",         fg = "#A02F6F" },
+	{ mime = "application/x-7z-compressed", fg = "#A02F6F" },
+	{ mime = "application/x-rar",           fg = "#A02F6F" },
+
+	# Fallback
+	{ name = "*", fg = "#6F6E69" },
+	{ name = "*/", fg = "#24837B" }
+]
+
+# : }}}
