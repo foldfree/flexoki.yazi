@@ -6,11 +6,11 @@
 cwd = { fg = "#100F0F" }
 
 # Hovered
-hovered         = { fg = "#000000", bg = "#F2F0E5" }
+hovered         = { fg = "#100F0F", bg = "#E6E4D9" }
 preview_hovered = { underline = true }
 
 # Find
-find_keyword  = { fg = "#AD8301", italic = true }
+find_keyword  = { fg = "#5E409D", italic = true, bold = true }
 find_position = { fg = "#A02F6F", bg = "reset", italic = true }
 
 # Marker
@@ -95,7 +95,7 @@ hovered = { underline = true }
 
 [which]
 mask            = { bg = "#F2F0E5" }
-cand            = { fg = "#24837B" }
+cand            = { fg = "#00736d" }
 rest            = { fg = "#5E409D" }
 desc            = { fg = "#A02F6F" }
 separator       = "  "
@@ -108,7 +108,7 @@ separator_style = { fg = "#575653" }
 
 [help]
 on      = { fg = "#A02F6F" }
-exec    = { fg = "#24837B" }
+exec    = { fg = "#00736d" }
 desc    = { fg = "#575653" }
 hovered = { bg = "#CECDC3", bold = true }
 footer  = { fg = "#100F0F", bg = "#E6E4D9"}
@@ -138,8 +138,8 @@ rules = [
 	{ mime = "application/x-rar",           fg = "#A02F6F" },
 
 	# Fallback
-	{ name = "*", fg = "#525252" },
-	{ name = "*/", fg = "#24837B" }
+	{ name = "*", fg = "#100F0F" },
+	{ name = "*/", fg = "#00736d" }
 ]
 
 # : }}}
