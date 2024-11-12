@@ -3,10 +3,10 @@
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#6F6E69" }
+cwd = { fg = "#100F0F" }
 
 # Hovered
-hovered         = { fg = "#100F0F", bg = "#F2F0E5" }
+hovered         = { fg = "#000000", bg = "#F2F0E5" }
 preview_hovered = { underline = true }
 
 # Find
@@ -19,7 +19,7 @@ marker_copied   = { fg = "#AD8301", bg = "#AD8301" }
 marker_cut      = { fg = "#AF3029", bg = "#AF3029" }
 
 # Tab
-tab_active   = { fg = "#6F6E69", bg = "#4385BE" }
+tab_active   = { fg = "#E6E4D9", bg = "#4385BE" }
 tab_inactive = { fg = "#4385BE", bg = "#DAD8CE" }
 tab_width    = 1
 
@@ -41,9 +41,9 @@ separator_close = ""
 separator_style = { fg = "#CECDC3", bg = "#CECDC3" }
 
 # Mode
-mode_normal = { fg = "#100F0F", bg = "#4385BE", bold = true }
-mode_select = { fg = "#100F0F", bg = "#879A39", bold = true }
-mode_unset  = { fg = "#100F0F", bg = "#CE5D97", bold = true }
+mode_normal = { fg = "#FFFCF0", bg = "#205EA6", bold = true }
+mode_select = { fg = "#FFFCF0", bg = "#66800B", bold = true }
+mode_unset  = { fg = "#FFFCF0", bg = "#A02F6F", bold = true }
 
 # Progress
 progress_label  = { fg = "#100F0F", bold = true }
@@ -111,7 +111,7 @@ on      = { fg = "#A02F6F" }
 exec    = { fg = "#24837B" }
 desc    = { fg = "#575653" }
 hovered = { bg = "#CECDC3", bold = true }
-footer  = { fg = "#575653", bg = "#CECDC3"}
+footer  = { fg = "#100F0F", bg = "#E6E4D9"}
 
 # : }}}
 
@@ -138,7 +138,7 @@ rules = [
 	{ mime = "application/x-rar",           fg = "#A02F6F" },
 
 	# Fallback
-	{ name = "*", fg = "#6F6E69" },
+	{ name = "*", fg = "#525252" },
 	{ name = "*/", fg = "#24837B" }
 ]
 
